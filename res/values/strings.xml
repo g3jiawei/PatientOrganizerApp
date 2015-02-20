@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Patient Organizer</string>
+    <string name="label_username">Username</string>
+    <string name="label_password">Password</string>
+    <string name="label_name">Name: </string>
+    <string name="label_date_of_birth">DOB: </string>
+    <string name="label_health_card_number">Health #: </string>
+    <string name="label_arrival">Arrival: </string>
+    <string name="label_time">Time: </string>
+    <string name="label_temperature">Temp(°C): </string>
+    <string name="label_systolic">Sys(mmHg): </string>
+    <string name="label_diastolic">Dia(mmHg): </string>
+    <string name="label_heart_rate">HR(bpm): </string>
+    <string name="label_urgency">Urgency: </string>
+    <string name="label_date">Date: </string>
+    <string name="label_prescription_name">Drug Name: </string>
+    <string name="label_prescription_instructions">Instructions: </string>
+    <string name="label_doctor_time">Last Doctor Checkup: </string>
+    <string name="label_prescription_instruction_dialog">Prescription Instructions</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Max. 35 characters</string>
+    <string name="hint_date">DD/MM/YYYY</string>
+    <string name="hint_health_card">Max. 12 digits</string>
+    <string name="hint_time">24:00</string>
+    <string name="hint_temperature">Max. 4 char(with decimal)</string>
+    <string name="hint_systolic">Max. 3 digits</string>
+    <string name="hint_diastolic">Max. 3 digits</string>
+    <string name="hint_heart_rate">Max. 3 digits</string>
+    <string name="button_login">Login</string>
+    <string name="button_save">Save</string>
+    <string name="button_vitals_history">Vitals History</string>
+    <string name="button_prescription_history">Prescription History</string>
+    <string name="action_settings">Settings</string>
+    <string name="header_patient_general_information">GENERAL INFORMATION</string>
+    <string name="header_patient_vital_signs">VITAL SIGNS</string>
+    <string name="header_patient_prescription">RECENT PRESCRIPTION</string>
+    <string name="header_vitals_history_time"><b>Time</b></string>
+    <string name="header_vitals_history_temperature"><b>Temp</b></string>
+    <string name="header_vitals_history_systolic"><b>Sys</b></string>
+    <string name="header_vitals_history_diastolic"><b>Dia</b></string>
+    <string name="header_vitals_history_heart_rate"><b>HR</b></string>
+    <string name="title_activity_main">Patient Organizer</string>
+    <string name="title_activity_login">Patient Organizer</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_add_patient">Add Patient</string>
+    <string name="title_activity_patient">Patient Information</string>
+    <string name="title_activity_update_vitals">Update Vitals</string>
+    <string name="title_activity_vitals_history">Vitals History</string>
+    <string name="title_activity_update_prescription">Add Prescription</string>
+    <string name="title_activity_record_doctor_time">Doctor Checkup</string>
+    <string name="title_activity_prescription_history">Prescription History</string>
+    <string name="title_activity_patients_by_urgency">List Of Patients By Urgency</string>
+
+</resources>

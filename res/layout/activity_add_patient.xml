@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    tools:context=".AddPatientActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+    	android:layout_width="fill_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="2" >
+    	
+	    <TextView
+	        android:id="@+id/label_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignRight="@+id/label_health_card_number"
+	        android:layout_alignBaseline="@+id/edit_name"
+	        android:text="@string/label_name" />
+		<EditText
+	        android:id="@+id/edit_name"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="8dp"
+	        android:padding="8dp"
+        	android:background="@drawable/text_border"
+	        android:layout_toRightOf="@+id/label_name"
+	        android:inputType="text"
+	        android:digits="QqWwEeRrTtYyUuIiOoPpAaSsDdFfGgHhJjKkLlZzXxCcVvBbNnMm,.'- "
+	        android:hint="@string/hint_name"
+	        android:maxLength="35"
+	        android:singleLine="true"
+	        android:imeOptions="actionNext" />
+	    <TextView
+	        android:id="@+id/label_date_of_birth"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/edit_name"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignRight="@+id/label_health_card_number"
+	        android:layout_alignBaseline="@+id/edit_date_of_birth"
+	        android:text="@string/label_date_of_birth" />
+		<EditText
+	        android:id="@+id/edit_date_of_birth"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="8dp"
+	        android:padding="8dp"
+        	android:background="@drawable/text_border"
+	        android:layout_below="@id/edit_name"
+	        android:layout_toRightOf="@+id/label_date_of_birth"
+	        android:inputType="date"
+	        android:digits="0123456789/"
+	        android:hint="@string/hint_date"
+	        android:maxLength="10"
+	        android:singleLine="true"
+	        android:imeOptions="actionNext" />
+		<TextView
+	        android:id="@+id/label_health_card_number"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingRight="5dp"
+	        android:layout_below="@id/edit_date_of_birth"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignBaseline="@+id/edit_health_card_number"
+	        android:text="@string/label_health_card_number" />
+		<EditText
+	        android:id="@+id/edit_health_card_number"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="8dp"
+	        android:padding="8dp"
+        	android:background="@drawable/text_border"
+	        android:layout_below="@id/edit_date_of_birth"
+	        android:layout_toRightOf="@+id/label_health_card_number"
+	        android:inputType="number"
+	        android:hint="@string/hint_health_card"
+	        android:maxLength="12" />
+		<TextView
+	        android:id="@+id/label_arrival_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/edit_health_card_number"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignRight="@+id/label_health_card_number"
+	        android:layout_alignBaseline="@+id/edit_arrival_time"
+	        android:text="@string/label_arrival" />
+		<EditText
+	        android:id="@+id/edit_arrival_time"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="8dp"
+	        android:padding="8dp"
+        	android:background="@drawable/text_border"
+	        android:layout_below="@id/edit_health_card_number"
+	        android:layout_toRightOf="@+id/label_arrival_time"
+	        android:inputType="time"
+	        android:digits="0123456789:"
+	        android:hint="@string/hint_time"
+	        android:maxLength="5"
+	        android:singleLine="true"
+	        android:imeOptions="actionDone"  />
+	
+	</RelativeLayout>
+	
+	<LinearLayout
+	    android:id="@+id/linearLayout1"
+	   	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:gravity="center"
+    	android:layout_weight="1" >
+    	
+	    <Button
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="@string/button_save"
+	        android:onClick="saveNewPatient" />
+	
+	</LinearLayout>
+
+</LinearLayout>

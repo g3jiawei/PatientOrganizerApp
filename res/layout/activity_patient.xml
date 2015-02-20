@@ -1,0 +1,297 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin" >
+	
+	<RelativeLayout 
+	    android:id="@+id/relativeLayout1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	
+	    <TextView
+			android:id="@+id/header_general_information"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="6dp"
+			android:text="@string/header_patient_general_information" />
+	    <View 
+	     	android:id="@+id/general_information_underline"
+	     	android:background="#999999"
+	     	android:layout_height="2dp" 
+	     	android:layout_width="fill_parent"
+	     	android:layout_marginBottom="5dp"
+			android:layout_below="@id/header_general_information" />
+	    
+	    <TextView
+			android:id="@+id/label_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/general_information_underline"
+			android:text="@string/label_name" />
+		<TextView
+			android:id="@+id/name"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/general_information_underline"
+			android:layout_marginLeft="8dp" 
+			android:layout_toRightOf="@+id/label_name" />
+		
+		<TextView
+	        android:id="@+id/label_date_of_birth"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/label_name"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/label_date_of_birth" />
+		<TextView
+			android:id="@+id/date_of_birth"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dp" 
+			android:layout_below="@id/name"
+			android:layout_toRightOf="@+id/label_date_of_birth" />
+		
+		<TextView
+	        android:id="@+id/label_health_card_number"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/label_date_of_birth"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/label_health_card_number" />
+	    <TextView
+			android:id="@+id/health_card_number"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dp" 
+			android:layout_below="@id/date_of_birth"
+			android:layout_toRightOf="@+id/label_health_card_number" />
+	    
+		<TextView
+	        android:id="@+id/label_arrival_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/label_health_card_number"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/label_arrival" />
+		<TextView
+			android:id="@+id/arrival_time"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dp"
+			android:layout_below="@id/health_card_number"
+			android:layout_toRightOf="@+id/label_arrival_time" />
+	
+		<View 
+	     	android:id="@+id/vital_signs_overline"
+	     	android:background="#999999"
+	     	android:layout_height="2dp" 
+	     	android:layout_width="fill_parent"
+	     	android:layout_marginTop="5dp"
+			android:layout_below="@id/label_arrival_time" />
+		<TextView
+			android:id="@+id/header_vital_signs"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/vital_signs_overline"
+			android:layout_alignParentLeft="true"
+			android:text="@string/header_patient_vital_signs" />
+		<View 
+	     	android:id="@+id/vital_signs_underline"
+	     	android:background="#999999"
+	     	android:layout_height="2dp" 
+	     	android:layout_width="fill_parent"
+	     	android:layout_marginBottom="5dp"
+			android:layout_below="@id/header_vital_signs" />
+		
+		<TextView
+			android:id="@+id/label_temperature"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/vital_signs_underline"
+			android:text="@string/label_temperature" />
+		<TextView
+			android:id="@+id/temperature"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/vital_signs_underline"
+			android:layout_marginLeft="8dp" 
+			android:layout_toRightOf="@+id/label_temperature" />
+		
+		<TextView
+	        android:id="@+id/label_systolic"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/label_temperature"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/label_systolic" />
+		<TextView
+			android:id="@+id/systolic"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dp" 
+			android:layout_below="@id/temperature"
+			android:layout_toRightOf="@+id/label_systolic" />
+		
+		<TextView
+	        android:id="@+id/label_diastolic"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/label_systolic"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/label_diastolic" />
+	    <TextView
+			android:id="@+id/diastolic"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dp" 
+			android:layout_below="@id/systolic"
+			android:layout_toRightOf="@+id/label_diastolic" />
+	    
+		<TextView
+	        android:id="@+id/label_heart_rate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/label_diastolic"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/label_heart_rate" />
+		<TextView
+			android:id="@+id/heart_rate"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dp"
+			android:layout_below="@id/diastolic"
+			android:layout_toRightOf="@+id/label_heart_rate" />
+		
+		<TextView
+	        android:id="@+id/label_vitals_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/label_heart_rate"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/label_time" />
+		<TextView
+			android:id="@+id/vitals_time"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dp"
+			android:layout_below="@id/heart_rate"
+			android:layout_toRightOf="@+id/label_vitals_time" />
+		
+		<TextView
+	        android:id="@+id/label_urgency"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/label_vitals_time"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/label_urgency" />
+		<TextView
+			android:id="@+id/urgency"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dp"
+			android:layout_below="@id/vitals_time"
+			android:layout_toRightOf="@+id/label_urgency" />
+		
+	    <View 
+	     	android:id="@+id/prescription_overline"
+	     	android:background="#999999"
+	     	android:layout_height="2dp" 
+	     	android:layout_width="fill_parent"
+	     	android:layout_marginTop="5dp"
+			android:layout_below="@id/label_urgency" />
+	    <TextView
+			android:id="@+id/header_prescription"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/prescription_overline"
+			android:layout_alignParentLeft="true"
+			android:text="@string/header_patient_prescription" />
+		<View 
+	     	android:id="@+id/prescription_underline"
+	     	android:background="#999999"
+	     	android:layout_height="2dp" 
+	     	android:layout_width="fill_parent"
+	     	android:layout_marginBottom="5dp"
+			android:layout_below="@id/header_prescription" />
+	
+		<TextView
+	        android:id="@+id/label_prescription_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/prescription_underline"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/label_prescription_name" />
+		<TextView
+			android:id="@+id/prescription_name"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dp"
+			android:layout_below="@id/prescription_underline"
+			android:layout_toRightOf="@+id/label_prescription_name" />
+		
+		<TextView
+	        android:id="@+id/label_prescription_instructions"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/label_prescription_name"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/label_prescription_instructions" />
+		<TextView
+			android:id="@+id/prescription_instructions"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dp"
+			android:layout_below="@id/prescription_name"
+			android:layout_toRightOf="@+id/label_prescription_instructions" />
+	
+		<View 
+	     	android:id="@+id/doctor_overline"
+	     	android:background="#999999"
+	     	android:layout_height="2dp" 
+	     	android:layout_width="fill_parent"
+	     	android:layout_marginTop="5dp"
+	     	android:layout_marginBottom="5dp"
+			android:layout_below="@id/prescription_instructions" />
+		<TextView
+	        android:id="@+id/label_doctor_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/doctor_overline"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/label_doctor_time" />
+		<TextView
+			android:id="@+id/doctor_time"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dp"
+			android:layout_marginBottom="15dp"
+			android:layout_below="@id/doctor_overline"
+			android:layout_toRightOf="@+id/label_doctor_time" />
+		
+		<LinearLayout android:id="@+id/linearLayout1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/label_doctor_time"
+		    android:orientation="vertical" >
+			
+			<Button
+			    android:id="@+id/button_vitals_history"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="4dp"
+		        android:text="@string/button_vitals_history"
+		        android:onClick="launchIntentVitalsHistoryActivity" />
+			<Button
+			    android:id="@+id/button_prescription_history"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/button_prescription_history"
+		        android:onClick="launchIntentPrescriptionHistoryActivity" />
+		    
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</ScrollView>
